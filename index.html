@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Styling Web Forms</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Create an Account</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <h2>Create an Account</h2>
+
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" required />
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" required />
+      </div>
+
+      <label for="email">E-mail</label>
+      <input type="text" id="email" required />
+      <span>We'll never share your email with anyone else.</span>
+
+      <div>
+        <input type="radio" id="male" />
+        <label for="">Male</label>
+        <input type="radio" />
+        <label for="female">Female</label>
+      </div>
+
+      <label for="country">Country</label>
+      <select name="country" id="country" required>
+        <option value="ukraine">Ukraine</option>
+        <option value="poland">Poland</option>
+        <option value="germany">Germany</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="city">City</label>
+      <input type="text" id="city" />
+
+      <button type="submit">Sign Up</button>
+
+      <span
+        >By clicking the 'Sign Up' button, you confirm that you accept our
+        <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> .</span
+      >
+
+      <div class="divider"></div>
+
+      <p>Have an account?</p>
+      <a href="#">Log In</a>
+
+      <a href="profile/index.html">Profil</a>
+    </form>
+  </body>
 </html>
